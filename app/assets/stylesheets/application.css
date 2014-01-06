@@ -1,0 +1,96 @@
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+body {
+    background-color: #e0e6de;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+a {
+    color: #cad0ff;
+    font-size: 15px;
+}
+
+div.header {
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 25px;
+    background-color: #808285;
+    color: #ffffff;
+    font-family: copperplate;
+    font-size: 25px;
+    vertical-align: middle;
+    text-shadow: 2px 3px 3px #000000;
+    -webkit-box-shadow: 0px 5px 5px #6c6d70;
+    -moz-box-shadow:    0px 5px 5px #6c6d70;
+    box-shadow:         0px 5px 5px #6c6d70;
+}
+
+#right-bar {
+    display: inline-block;
+    padding-right: 10%;
+    float: right;
+}
+
+
+
+input[type=radio], input.radio {
+    display: inline-block;
+
+}
+
+label {
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+form#questions li {
+    margin-bottom: 1em;
+}
+
+#double {
+    width: 760px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#double li {
+    width: 50%;
+    line-height: 1.5em;
+    float: left;
+    display: inline;
+}
+
+#a-list {
+    font-size: 20px;
+    font-weight: bold;
+    color: darkgreen;
+}
+
+#b-list {
+    font-size: 20px;
+    font-weight: bold;
+    color: #64620c;
+}
+
+#c-list {
+    font-size: 20px;
+    font-weight: bold;
+    color: #643408;
+}
+
+#f-list {
+    font-size: 20px;
+    font-weight: bold;
+    color: #640307;
+}
