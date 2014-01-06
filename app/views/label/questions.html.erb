@@ -1,0 +1,24 @@
+
+<% def render_structure(s) %>
+  <% if s.class == Hash %>
+    <% s.each { |i| %>
+    <% render_structure(i)} %>
+  <% elsif s.class == Array %>
+    <ul>
+    <% s.each { |i| %>
+    <% render_structure(i)} %>
+    </ul>
+  <% else %>
+    <li>
+        <input type="radio" name="<%= s %>" value="yes" checked="checked">Yes
+        <input type="radio" name="<%= s %>" value="no">No
+        <input type="radio" name="<%= s %>" value="prefer-no">Prefer No
+        <label for="<%= s %>"><%= s %></label>
+    </li>
+  <% end %>
+<% end %>
+
+<form id="questions" method="post" action="/show_diet">
+<% render_structure(Label::FOOD_HASH) %>
+    <input type="submit" value="Submit">
+</form>
