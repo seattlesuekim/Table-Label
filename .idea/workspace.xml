@@ -111,10 +111,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="label_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="label_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/label_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="0.4918033">
+            <state line="26" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="118" selection-end="180" vertical-scroll-proportion="0.0554855">
               <folding />
             </state>
           </provider>
@@ -159,11 +168,11 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/party.rb" />
         <option value="$PROJECT_DIR$/spec/models/party_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/label.rb" />
         <option value="$PROJECT_DIR$/spec/models/label_spec.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -963,13 +972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="61" selection-start="770" selection-end="770" vertical-scroll-proportion="0.45214105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/label.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="149" column="16" selection-start="4050" selection-end="4050" vertical-scroll-proportion="-11.6">
@@ -1000,7 +1002,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/label_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="0.4918033">
+        <state line="26" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="118" selection-end="180" vertical-scroll-proportion="0.0554855">
           <folding />
         </state>
       </provider>
