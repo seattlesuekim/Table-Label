@@ -108,6 +108,7 @@ class Label
     # summed array contains the decimal equivs of each group of 4 chars in base 3.
     summed_array = []
     # produce an array of groups of 4 from the preliminary code.
+    # ugly way of breaking 64 chars into groups of 4
     groups_array = @code.scan(/(....)(....)(....)(....)(....)(....)(....)(....)(....)(....)(....)(....)(....)(....)(....)(....)/).flatten!
     # convert each group of 4 characters to decimal
     groups_array.each do |group|
