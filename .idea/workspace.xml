@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e08f9474-ba26-4a96-9ff7-cf78fc31e582" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/label/display.html.erb" afterPath="$PROJECT_DIR$/app/views/label/display.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/label.rb" afterPath="$PROJECT_DIR$/app/models/label.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/label/questions.html.erb" afterPath="$PROJECT_DIR$/app/views/label/questions.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/label/show_diet.html.erb" afterPath="$PROJECT_DIR$/app/views/label/show_diet.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
     </list>
     <ignored path="table_label.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +29,7 @@
     <file path="/index.html.erb" changelist="e08f9474-ba26-4a96-9ff7-cf78fc31e582" time="1388904117671" ignored="false" />
     <file path="/faq.html.erb" changelist="e08f9474-ba26-4a96-9ff7-cf78fc31e582" time="1388905664489" ignored="false" />
     <file path="/Ruby Console" changelist="e08f9474-ba26-4a96-9ff7-cf78fc31e582" time="1388989966555" ignored="false" />
-    <file path="/Gemfile" changelist="e08f9474-ba26-4a96-9ff7-cf78fc31e582" time="1389027544481" ignored="false" />
+    <file path="/Gemfile" changelist="e08f9474-ba26-4a96-9ff7-cf78fc31e582" time="1389226098686" ignored="false" />
     <file path="/Rakefile" changelist="e08f9474-ba26-4a96-9ff7-cf78fc31e582" time="1388992492763" ignored="false" />
     <file path="/party_spec.rb" changelist="e08f9474-ba26-4a96-9ff7-cf78fc31e582" time="1388994719541" ignored="false" />
     <file path="/label_spec.rb" changelist="e08f9474-ba26-4a96-9ff7-cf78fc31e582" time="1388995411586" ignored="false" />
@@ -121,13 +117,13 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="26" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
+            <state line="10" column="21" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -136,10 +132,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/index.html.erb">
+      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="79" vertical-scroll-proportion="0.0">
+            <state line="35" column="31" selection-start="1444" selection-end="1444" vertical-scroll-proportion="0.56179774">
               <folding />
             </state>
           </provider>
@@ -231,8 +227,8 @@
         <option value="$PROJECT_DIR$/app/views/label/show_diet.html.erb" />
         <option value="$PROJECT_DIR$/app/views/label/display.html.erb" />
         <option value="$PROJECT_DIR$/app/models/label.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -299,6 +295,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="table_label" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="table_label" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -871,19 +885,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="20" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="31" selection-start="1444" selection-end="1444" vertical-scroll-proportion="0.94254935" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index.html.erb">
@@ -942,9 +946,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="26" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -952,6 +956,20 @@
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="21" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="31" selection-start="1444" selection-end="1444" vertical-scroll-proportion="0.56179774">
           <folding />
         </state>
       </provider>
