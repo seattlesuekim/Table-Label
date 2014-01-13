@@ -3,14 +3,18 @@
 <head>
   <title>TableLabel</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "bootstrap" %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="table-label">
 
-<div class="header">Table | Label</div>
+<div class="header"><a href="/">Table | Label</a></div>
+
 
 <%= yield %>
 
+</div>
 </body>
 </html>

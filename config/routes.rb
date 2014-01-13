@@ -1,5 +1,7 @@
 TableLabel::Application.routes.draw do
 
+  root 'welcome#index'
+
   resources :label
   get '/questions' => 'label#ask'
   match '/show_diet', to: 'label#create',              via: 'post'
