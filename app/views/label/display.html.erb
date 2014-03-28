@@ -4,11 +4,9 @@
     <div id="a-list">A-List</div>
     <p>Everything in this list gets the green light -- including everything not in the questionnaire!</p>
     <ul id="double">
-        <% @party.arrays_by_pref[0].each do |i|%>
-            <% if Party.set_of_leaves.include?(i) %>
+        <% (Party.set_of_leaves & @party.arrays_by_pref[0]).each do |i| %>
                 <li><%= i %></li>
             <% end %>
-        <% end %>
     </ul>
     <br><hr>
 <% end %>
@@ -16,23 +14,20 @@
     <div id="b-list">B-List</div>
     <p>80-100% of your guests will enjoy these ingredients.</p>
     <ul id="double">
-        <% @party.arrays_by_pref[1].each do |i|%>
-            <% if Party.set_of_leaves.include?(i) %>
+        <% (Party.set_of_leaves & @party.arrays_by_pref[1]).each do |i| %>
                 <li><%= i %></li>
             <% end %>
-        <% end %>
     </ul>
     <br><hr>
 <% end %>
+
 <% if @party.arrays_by_pref[2] != [] %>
     <div id="c-list">C-List</div>
     <p>60-80% of your guests will enjoy these ingredients.</p>
     <ul id="double">
-        <% @party.arrays_by_pref[2].each do |i|%>
-            <% if Party.set_of_leaves.include?(i) %>
-                <li> <% i %></li>
+        <% (Party.set_of_leaves & @party.arrays_by_pref[2]).each do |i| %>
+                <li><%= i %></li>
             <% end %>
-        <% end %>
     </ul>
     <br><hr>
 <% end %>
@@ -40,10 +35,8 @@
     <div id="f-list">F-List</div>
     <p>You <b>must not</b> use these ingredients.</p>
     <ul id="double">
-        <% @party.arrays_by_pref[3].each do |i|%>
-            <% if Party.set_of_leaves.include?(i) %>
-                <li> <%= i  %></li>
+        <% (Party.set_of_leaves & @party.arrays_by_pref[3]).each do |i| %>
+                <li><%= i %></li>
             <% end %>
-        <% end %>
     </ul>
 <% end %>

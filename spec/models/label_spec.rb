@@ -37,6 +37,17 @@ describe 'Label' do
     end
   end
 
+  describe '.create_array_of_labels' do
+    it 'returns an array of two label objects' do
+      params = {code: ")))PPED))))lQQ6,\n)))))))))))QQQ,)"}
+      array = Label.create_array_of_labels(params[:code])
+      array.each do |label|
+        expect(label).to be_a(Label)
+      end
+      expect(array.count).to eq(2)
+    end
+  end
+
   describe '#compress' do
     let(:orig_code) {'0120120120120120120120120120120120120120120120120120120120120120'}
     it 'compresses' do

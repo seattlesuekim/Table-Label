@@ -31,26 +31,23 @@ class Party
     s
   end
 
-  # generates a hash containing the proportion of people okay with a certain food.
-  def make_percent_hash
-    label_count = @list_of_labels.count
-    @percent_hash = Hash.new(0)
-    @list_of_labels.each do |label|
-      label.diet_hash.each_pair do |k, v|
-        if v == 'yes'
-          @percent_hash[k] += 100/label_count
-        elsif v == 'prefer no'
-          @percent_hash[k] += 25/label_count
-        else
-          @percent_hash[k] += 0
+  def percent_hash
+    @percent_hash ||= begin
+      label_count = @list_of_labels.count
+      percent_hash = Hash.new(0)
+      @list_of_labels.each do |label|
+        label.diet_hash.each_pair do |k, v|
+          if v == 'yes'
+            percent_hash[k] += 100/label_count
+          elsif v == 'prefer no'
+            percent_hash[k] += 25/label_count
+          else
+            percent_hash[k] += 0
+          end
         end
       end
+      percent_hash
     end
-    @percent_hash
-  end
-
-  def percent_hash
-    @percent_hash ||= make_percent_hash
   end
 
   # the A-list is 100% yes

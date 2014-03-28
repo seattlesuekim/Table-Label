@@ -40,7 +40,7 @@ class Label
   def self.create_array_of_labels(codes)
     label_array = []
     #split based on comma or semicolon with or without whitespace, or any number of line breaks.
-    array_of_codes = codes.values[0].split(/s*[,;]\s*|\s{2,}|[\r\n]/)
+    array_of_codes = codes.split(/\s+/).compact
     array_of_codes.each do |code|
       label_array << create_from_code(code)
     end
@@ -128,28 +128,15 @@ class Label
   def dec_to_81(array)
     base_81_string = ''
     array.each do |decimal|
-      base_81_string += char_map[decimal]
+      base_81_string += (decimal + ')'.ord).chr
     end
     base_81_string
   end
 
-  # mapping from base 10 numbers to ascii chars in base 81
-  def generate_map
-    map = {}
-    (0..81).each do |digit|
-      map[digit] = (digit + ')'.ord).chr
-    end
-   map
-  end
-
-  def char_map
-    @char_map ||= generate_map
-  end
-
-  def base_81_to_dec # convert from base 81 to base 10 using char_map
+  def base_81_to_dec # convert from base 81 to base 10 using dec_to_ascii
     decimal_array = []
     compressed_code.each_char do |char|
-      decimal_array << char_map.key(char)
+      decimal_array << (char.ord - ')'.ord)
     end
     decimal_array
   end

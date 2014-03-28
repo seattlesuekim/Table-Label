@@ -16,7 +16,7 @@ class LabelController < ApplicationController
   end
 
   def break_down
-    @label_array = Label.create_array_of_labels(params)
+    @label_array = Label.create_array_of_labels(params['code'])
     @party = Party.new(@label_array)
     render 'display'
   end
